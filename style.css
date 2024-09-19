@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, yellow, blue, red);
+}
+.conteiner {
+  background-color: rgb(10, 223, 177);
+  width: 850px;
+  padding: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 70px;
+  padding: 60px 40px;
+}
+button {
+  background: rgb(28, 100, 0);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.keyboard button {
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+.keyboard {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hint {
+  font-size: 24px;
+}
+.letter {
+  width: 28px;
+  font-size: 32px;
+  border-bottom: 3px solid black;
+}
+.secretWord {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+button[disabled] {
+  opacity: 0.6;
+}
+.game-modal.show {
+  opacity: 1;
+  pointer-events: none;
+  pointer-events: auto;
+}
+.game-modal {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+.game-modal img {
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+.content {
+  background-color: #fff;
+  max-width: 420px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.game-modal h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.play-again {
+  padding: 12px 24px;
+}
